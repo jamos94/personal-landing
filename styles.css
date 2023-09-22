@@ -1,0 +1,218 @@
+:root {
+  --white: #fff;
+  --base-color: #E67B7B;
+  --secondary-color: #E9CDCD;
+  --font: 'Croissant One', cursive;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  text-align: center;
+  z-index: 1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--base-color);
+  color: var(--secondary-color);
+  font-size: xx-large;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  margin-top: 1em;
+}
+
+a > img {
+  max-width: 2.5em;
+}
+
+.intro {
+  padding: 5rem;
+}
+
+.intro > .title {
+  font-size: 4rem;
+  color: var(--white);  
+}
+
+.intro > .name {
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 60px);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+.skills, .hire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.skills, 
+.projects {
+  font-size: xxx-large;
+  color: var(--base-color);
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+  gap: 3rem;
+}
+
+.skills {
+  justify-content: flex-start;
+}
+
+.align {
+  display: flex;
+  flex-direction: row;
+}
+
+.skill-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-flow: row wrap;
+}
+
+.box > img {
+  max-width: 12rem;
+  background-color: var(--white);
+  padding: 0.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.align {
+  gap: 1em;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--base-color);
+  color: var(--secondary-color);
+  height: fit-content;
+  width: 100vw;
+}
+
+.project-boxes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.projects .box {
+  font-size: x-large;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  width: 20rem;
+  margin: 0.34em;
+  text-align: center;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  height: 10rem;
+  background-size: cover;
+}
+
+.card-2 {
+  background-image: url('/assets/Screenshot\ 2023-09-22\ at\ 3.16.52\ PM.png');
+}
+
+.card-3 {
+  background-image: url('/assets/jlscreening.png');
+}
+
+.card-4 {
+  background-image: url('assets/tres-cards.png');
+}
+
+.box {
+  background-color: var(--secondary-color);
+  color: var(--base-color);
+}
+
+.description {
+  padding: 0.5em;
+}
+
+button {
+  border: 1px solid var(--base-color);
+  background-color: var(--base-color);
+  color: white;
+  border-radius: 0.2em;
+  margin-bottom: 1.55em;
+  font-size: large;
+  padding: 0.4em;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--base-color);
+}
+
+a {
+  text-decoration: underline;
+  color: var(--base-color);
+  font-weight: bolder;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
