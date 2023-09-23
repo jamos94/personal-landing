@@ -202,7 +202,6 @@ button:hover {
 a {
   text-decoration: underline;
   color: var(--base-color);
-  font-weight: bolder;
 }
 
 @keyframes jumpInfinite {

@@ -1,0 +1,35 @@
+@media (max-width: 768px){
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  .intro {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .intro > .title {
+    font-size: 3rem;
+    padding-bottom: 1em;
+  }
+
+  .intro > .name {
+    font-size: 1.8rem;
+  }
+
+  .intro > .tag-line {
+    font-size: x-large;
+  }
+
+  .skills {
+    height: fit-content;
+  }
+
+  .align {
+    flex-direction: column;
+  }
+}
